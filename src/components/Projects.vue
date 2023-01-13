@@ -1,0 +1,99 @@
+<template>
+    <div class="projects">
+        <h2>My Projects</h2>
+        <div class="container" style="display:inline-block;">
+            <div class="row justify-content-center cols-3">
+                <div class="card" style="background-color: violet;border:solid; border-color:black;" v-for="item in projects">
+                    <div class="card-inner">
+                            <h4>{{ item.name }}</h4>
+                            <img
+                            :src="item.img"
+                            alt="Avatar"
+                            style="width: 75%; height: 55%; border: solid; border-color: black;"/>
+                            <a :href="item.Netlify">Netlify</a>
+                            <a :href="item.github">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+       
+     </div>
+</template>
+
+<script>
+    export default {
+        projects: "exam-cards",
+        data(){
+            return{
+
+                projects : [
+                    {
+                        name: 'First Portfolio',
+                        img: 'https://i.postimg.cc/263z62Wg/first-potfiolio.png',
+                        Netlify:' zoepersonalportfolio.netlify.app',
+                        github:'https://github.com/zoefaithdaniels/personal-portfolio-2.0.git'
+                    },
+                    {
+                        name: 'Netflix',
+                        img: 'https://i.postimg.cc/cJCqM6Jn/Pandemie-Netflix-Serie-schwankt-zwischen-Panikmache-und-Aufkl-rung-Kritik.jpg',
+                        Netlify:'',
+                        github:'https://github.com/zoefaithdaniels/netflix.git',
+                    
+
+                    },
+                    {
+                        name: 'Calculator',
+                        img: 'https://i.postimg.cc/yY8DRyH6/zoes-cal.png',
+                        Netlify:' https://zoe-calculator.netlify.app/',
+                        github:'https://github.com/zoefaithdaniels/calculator.git'
+                    },
+                    {
+                        name: 'Ecommerce website',
+                        img: 'https://i.postimg.cc/q75wfvxy/bookstore.png',
+                        Netlify:'https://endofmoduleproject.netlify.app/',
+                        github:'https://github.com/zoefaithdaniels/JavaScript-end-of-module-project.git'
+                    },
+                    {
+                        name: 'First product cards',
+                        img: 'https://i.postimg.cc/RSyDY4dw/products-cards.png',
+                        Netlify:'https://endofmoduleproject.netlify.app/',
+                        github:'https://github.com/zoefaithdaniels/JavaScript-end-of-module-project.git'
+                    },
+                    {
+                        name: 'Third One',
+                        img: 'https://i.postimg.cc/jKX6CS1W/IMG-20221013-131514.jpg',
+                        Netlify:'',
+                        github:''
+                    },
+                ]
+           }
+        }
+        
+    }
+</script>
+
+<style scoped>
+
+.card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    margin: 20px;
+    
+}
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+
+</style>
