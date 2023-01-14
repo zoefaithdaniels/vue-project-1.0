@@ -10,8 +10,8 @@
                             :src="item.img"
                             alt="Avatar"
                             style="width: 75%; height: 55%; border: solid; border-color: black;"/>
-                            <a :href="item.Netlify">Netlify</a>
-                            <a :href="item.github">Github</a>
+                            <a :href="item.Netlify"><i class="fa-brands fa-github"></i> Netlify</a>
+                            <a :href="item.github"><i class="fa-regular fa-globe"></i> Github</a>
                     </div>
                 </div>
             </div>
@@ -30,7 +30,7 @@
                     {
                         name: 'First Portfolio',
                         img: 'https://i.postimg.cc/263z62Wg/first-potfiolio.png',
-                        Netlify:' zoepersonalportfolio.netlify.app',
+                        Netlify:'https://zoepersonalportfolio.netlify.app/',
                         github:'https://github.com/zoefaithdaniels/personal-portfolio-2.0.git'
                     },
                     {
@@ -60,10 +60,10 @@
                         github:'https://github.com/zoefaithdaniels/JavaScript-end-of-module-project.git'
                     },
                     {
-                        name: 'Third One',
-                        img: 'https://i.postimg.cc/jKX6CS1W/IMG-20221013-131514.jpg',
-                        Netlify:'',
-                        github:''
+                        name: 'My hover cards',
+                        img: 'https://i.postimg.cc/BJvZ0zw7/hover-cards.png',
+                        Netlify:'https://zoepersonalportfolio.netlify.app/',
+                        github:'https://github.com/zoefaithdaniels/personal-portfolio-2.0.git'
                     },
                 ]
            }

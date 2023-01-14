@@ -2,57 +2,63 @@
     <section class="contact">
       <h1 class="title">Contact Me</h1>
 
-      <div class="container">
-        <div class="contact-form row">
-          <div class="form-field col-lg-6">
-            <input id="name" class="input-text" type="text" name="" />
-            <label for="name" class="label">Name</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input id="email" class="input-text" type="text" name="" />
-            <label for="email" class="label">email</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input
-              id="Company name"
-              class="input-text"
-              type="text"
-              name=""
-            />
-            <label for="Company name" class="label"> Company Name</label>
-          </div>
-          <div class="form-field col-lg-6">
-            <input id="phone" class="input-text" type="text" name="" />
-            <label for="phone" class="label">contact number</label>
-          </div>
-          <div class="form-field col-lg-12">
-            <input id="message" class="input-text" type="text" name="" />
-            <label for="message" class="label">message</label>
-          </div>
-          <div>
-            <div class="form-field col-lg-12">
-              <button class="submit-btn"
-                type="submit"
-                value="submit"
-                name="">
-              Submit</button>
-            </div>
-          </div>
 
-              <div id="contact">
-        <div class="container">
-          <div class="row">
-            <div class="contact-left">
-              <p><i class="fas fa-paper-plane"></i> zoedaniels094@gmail.com</p>
-              <p><i class="fas fa-phone-square-alt"></i> 084 755 3693</p>
-              <div class="social icons"></div>
-              </div>
-              </div>
-                
-            </div>
-          </div>
-        </div>
-      </div>
+
+      <form action="https://formspree.io/f/xoqzqoyr" method="POST" class="row g-3">
+  <div class="col-md-4">
+    <label for="validationDefault01" class="form-label">First name</label>
+    <input type="text" class="form-control" id="validationDefault01" name="name" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefault02" class="form-label">Last name</label>
+    <input type="text" class="form-control" id="validationDefault02" name="name" required>
+  </div>
+  <div class="col-md-4">
+    <label for="validationDefaultUsername" class="form-label">Username</label>
+    <div class="input-group">
+      <span class="input-group-text" id="inputGroupPrepend2">@</span>
+      <input type="text" class="form-control" id="validationDefaultUsername"  aria-describedby="inputGroupPrepend2" name="name" required>
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label for="validationDefault03" class="form-label">City</label>
+    <input type="text" class="form-control" id="validationDefault03" name="name" required>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault04" class="form-label">Province</label>
+    <select class="form-select" id="validationDefault04" name="name" required>
+      <option selected disabled value="">Choose One</option>
+      <option>Western Cape</option>
+      <option>Eastern Cape</option>
+      <option>Free State</option>
+      <option>KwaZulu-Natal</option>
+      <option>Limpopo</option>
+      <option>Northern Cape</option>
+      <option>North West</option>
+      <option>Gauteng</option>
+      <option>Mpumalanga</option>
+    </select>
+  </div>
+  <div class="col-md-3">
+    <label for="validationDefault05" class="form-label">Zip</label>
+    <input type="text" class="form-control" id="validationDefault05" name="number" required>
+  </div>
+  <div class="col-12">
+    <div class="form-check">
+      <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" name="text" required>
+      <label class="form-check-label" for="invalidCheck2">
+        Agree to terms and conditions
+      </label>
+    </div>
+  </div>
+  <div class="col-12">
+    <button class="btn btn-primary" type="submit">Submit form</button>
+  </div>
+</form>
+
+    <!-- </form> -->
+
+
     </section>
   
 </template>
@@ -80,44 +86,9 @@ flex-direction: row;
       border: solid;
       border-color: black;
     } 
-    .contact-form .form-field{
-      position: relative;
-      margin: 32px 0;
-    }
-
-    .contact-form .input-text{
-      display: block;
-      width: 100%;
-      height: 36px;
-      border-width: 0 0 2px 0;
-      border-color: violet;
-      font-size: 18px;
-      line-height: 26px;
-      font-weight: 400;
-      border-radius: 1cm;
-      border: solid;
-
-    }
-    .contact-form .input-text:focus{
-      outline: none;
-    }
-   
-    .contact-form .submit-btn{
-      display: inline-block;
-      background-image: linear-gradient(125deg, violet,#970645);
-      color: rgb(0, 0, 0);
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 16px;
-      padding: 8px 16px;
-      border: none;
-      width: 200px;
-      cursor: pointer;
+    .btn-primary{
+      background: rgb(149, 32, 149);
       border: solid;
       border-color: black;
-      border-radius: 1cm;
     }
-    .contact-left{
-        color: black;
-    }
-</style>
+    </style>

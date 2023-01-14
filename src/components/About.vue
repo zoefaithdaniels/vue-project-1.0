@@ -13,6 +13,29 @@
                 I love trying new things and discover new hidden talents that might have to learn more and too broaden my knowledge. I am a hard working person and always find ways to better myself and always up for new challenges.
                 In my free time I spend time with family and reading aswell as watching sports on a regular.
             </p> 
+
+            
+            <div class="row">
+                    <div class="col-lg-6">
+                        <ul>
+                          <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>Birthday:</strong>16 October 2003</li>
+                          <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>Phone:</strong>+27 84  755 3693</li>
+                          <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>City:</strong>Cape Town,Bishop Lavis</li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                      <ul>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>Age:</strong>19 Years Old</li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>Matric:</strong>Higher Certificate</li>
+                        <li><i class="fa fa-angle-right" aria-hidden="true"></i><strong>Email:</strong>zoedaniels094@gmail.com</li>
+                      </ul>
+                    </div>
+                </div>
+
+
+
+
+
         </div>
     </div> 
 </template> 
@@ -59,53 +82,6 @@
     .about-col-2{
    flex-basis: 60%;
   } 
-.sub-title{ 
-     font-size: 60px;
-    font-weight: 600;
-    color: black;
-} 
-   .tab-titles{
-    display: flex;
-    margin: 20px 0 40px;
-
-  }  
- .tab-links{
-    margin-right: 50px;
-    font-size: 18px;
-    font-weight: 500;
-    cursor: pointer;
-    position: relative;
-} 
-.tab-links::after{
-    content: '';
-    width: 0;
-    height: 3px;
-    background: violet;
-    position: absolute; 
-    left: 0;
-    bottom: -8px;
-    transition: 0.5s;
-}
-  .tab-links.active-link::after{
-    width: 50%;
-
-  }
-  .tab-content ul li{
-    list-style: none;
-    margin: 10px 0;
-
-  }
-  .tab-contents ul li span{
-    color: violet;
-    font-size: 14px;
-  }
-.tab-content{
-    display: none;
-}
-.tab-contents.active-tab{
-display: block;
-}
-
 </style>
 
 
